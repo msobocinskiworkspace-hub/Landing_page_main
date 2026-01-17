@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, XCircle } from "lucide-react";
+import { CheckCircle2, XCircle, Play } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useEffect, useRef, useState } from "react";
 
@@ -79,6 +79,26 @@ const Index = () => {
   }, []);
   return (
     <div className="min-h-screen bg-background">
+      {/* Fixed Header with Logo */}
+      <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50 py-3 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto flex items-center">
+          <a 
+            href="https://www.cheetahmktg.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <img 
+              src="/Cheetah.png" 
+              alt="Cheetah Logo" 
+              className="h-12 w-auto"
+            />
+          </a>
+        </div>
+      </header>
+
+      {/* Main content with top padding for fixed header */}
+      <div className="pt-20">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
         <div className="max-w-4xl mx-auto text-center">
@@ -291,6 +311,32 @@ const Index = () => {
               ))}
             </ul>
           </Card>
+
+          {/* Course Preview Video */}
+          <div className="mt-12">
+            <div 
+              className="rounded-2xl p-8 mb-6"
+              style={{
+                background: 'linear-gradient(to right, #4285F4, #FF88E6, #EEFF41)'
+              }}
+            >
+              <h3 className="text-2xl font-bold text-white">See it in action — Course preview</h3>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <video 
+                width="100%" 
+                height="auto" 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                className="w-full h-auto aspect-[2560/1080]"
+              >
+                <source src="/movie.mov" type="video/quicktime" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -344,8 +390,8 @@ const Index = () => {
         </p>
       </Card>
 
-      <Card className="p-8 border-2 hover:border-secondary transition-colors">
-        <h3 className="text-2xl font-semibold mb-4 text-secondary">Proven process</h3>
+      <Card className="p-8 border-2 hover:border-accent transition-colors">
+        <h3 className="text-2xl font-semibold mb-4 text-accent">Proven process</h3>
         <p className="text-lg text-card-foreground leading-relaxed">
           The same framework that’s worked for clients in manufacturing, logistics, and consulting industries.
         </p>
@@ -370,8 +416,8 @@ const Index = () => {
 
     <div className="grid md:grid-cols-2 gap-8">
       {/* LEFT CARD */}
-      <Card className="p-8 border-2 border-primary bg-primary/5">
-        <h3 className="text-2xl font-bold mb-6 text-primary flex items-center gap-3">
+      <Card className="p-8 border-2 border-primary bg-primary/5 text-center">
+        <h3 className="text-2xl font-bold mb-6 text-primary flex items-center justify-center gap-3">
           <CheckCircle2 className="w-8 h-8" />
           You'll love this if:
         </h3>
@@ -391,8 +437,8 @@ const Index = () => {
       </Card>
 
       {/* RIGHT CARD */}
-      <Card className="p-8 border-2 border-destructive bg-destructive/5">
-        <h3 className="text-2xl font-bold mb-6 text-destructive flex items-center gap-3">
+      <Card className="p-8 border-2 border-destructive bg-destructive/5 text-center">
+        <h3 className="text-2xl font-bold mb-6 text-destructive flex items-center justify-center gap-3">
           <XCircle className="w-8 h-8" />
           It's not for:
         </h3>
@@ -597,6 +643,7 @@ const Index = () => {
     </div>
   </div>
 </footer>
+      </div>
     </div>
   );
 }
