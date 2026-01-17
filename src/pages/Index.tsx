@@ -271,30 +271,42 @@ const Index = () => {
       {/* What You Get Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-foreground">What exactly you get</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-foreground">What you’ll get?</h2>
           <div className="space-y-6 mb-12">
-            <Card className="p-6 border-l-4 border-l-primary">
+            <div
+              className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm border-l-4"
+              style={{ borderLeftColor: "hsl(var(--primary))" }}
+            >
               <h3 className="text-2xl font-bold mb-3 text-card-foreground">1. Profile</h3>
               <p className="text-lg text-muted-foreground">
                 Turn views into conversations. With no bullshit and too much focus on the banners and about sections…
               </p>
-            </Card>
-            <Card className="p-6 border-l-4 border-l-secondary">
+            </div>
+            <div
+              className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm border-l-4"
+              style={{ borderLeftColor: "hsl(var(--primary))" }}
+            >
               <h3 className="text-2xl font-bold mb-3 text-card-foreground">2. Foundations</h3>
               <p className="text-lg text-muted-foreground">
                 Lead gen + marketing foundation logic that ACTUALLY works, regardless of the algorithm
               </p>
-            </Card>
-            <Card className="p-6 border-l-4 border-l-accent">
+            </div>
+            <div
+              className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm border-l-4"
+              style={{ borderLeftColor: "hsl(var(--primary))" }}
+            >
               <h3 className="text-2xl font-bold mb-3 text-card-foreground">3. Messaging</h3>
               <p className="text-lg text-muted-foreground">How to talk to leads people without being a creepy spamer</p>
-            </Card>
-            <Card className="p-6 border-l-4 border-l-primary">
+            </div>
+            <div
+              className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm border-l-4"
+              style={{ borderLeftColor: "hsl(var(--primary))" }}
+            >
               <h3 className="text-2xl font-bold mb-3 text-card-foreground">4. Content</h3>
               <p className="text-lg text-muted-foreground">
                 Non-cringe ways to stay visible and express yourself - it's like having your OWN magazine
               </p>
-            </Card>
+            </div>
           </div>
           <Card className="p-8 bg-muted/50">
             <h3 className="text-2xl font-bold mb-6 text-foreground">You also get:</h3>
@@ -320,7 +332,7 @@ const Index = () => {
                 background: 'linear-gradient(to right, #4285F4, #FF88E6, #EEFF41)'
               }}
             >
-              <h3 className="text-2xl font-bold text-white">See it in action — Course preview</h3>
+              <h3 className="text-2xl font-bold text-white">See it in action!</h3>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <video 
@@ -332,7 +344,7 @@ const Index = () => {
                 playsInline
                 className="w-full h-auto aspect-[2560/1080]"
               >
-                <source src="/movie.mov" type="video/quicktime" />
+                <source src="/movie.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
