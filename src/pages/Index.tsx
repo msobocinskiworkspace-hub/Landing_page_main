@@ -102,7 +102,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
         <div className="max-w-4xl mx-auto text-center">
-          <Badge className="mb-6 bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-6 py-2">
+          <Badge className="mb-6 text-black hover:opacity-90 text-lg px-6 py-2" style={{ backgroundColor: "#EEFF41" }}>
             Early-bird: €39 (regular €49)
           </Badge>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-foreground leading-tight">
