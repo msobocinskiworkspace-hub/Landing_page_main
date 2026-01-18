@@ -635,12 +635,20 @@ const Index = () => {
             mariia@cheetahmktg.com
           </a>
           <a 
-            href="https://www.cheetahmktg.com/s/Privacy_Policy_EN.pdf"
+            href="/Privacy%20Policy%20Mini%20Course.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Privacy policy
+          </a>
+          <a 
+            href="/Terms%20and%20Conditions%20Mini%20Course.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Terms and Conditions
           </a>
         </div>
       </div>
