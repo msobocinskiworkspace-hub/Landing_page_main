@@ -335,13 +335,12 @@ const Index = () => {
               <h3 className="text-2xl font-bold text-white">See it in action!</h3>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <video 
-                width="100%" 
-                height="auto" 
-                autoPlay 
-                muted 
-                loop 
+              <video
+                width="100%"
+                height="auto"
+                controls
                 playsInline
+                preload="metadata"
                 className="w-full h-auto aspect-[2560/1080]"
               >
                 <source src="/movie.mp4" type="video/mp4" />
