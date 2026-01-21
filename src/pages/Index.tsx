@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, XCircle, Play } from "lucide-react";
+import { CheckCircle2, XCircle, Linkedin, Instagram } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useEffect, useRef, useState } from "react";
 
@@ -81,7 +81,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Fixed Header with Logo */}
       <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50 py-3 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto flex items-center">
+        <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
           <a 
             href="https://www.cheetahmktg.com" 
             target="_blank" 
@@ -94,6 +94,32 @@ const Index = () => {
               className="h-12 w-auto"
             />
           </a>
+
+          <div className="flex items-center gap-2">
+            <Button asChild variant="ghost" size="icon" className="h-10 w-10">
+              <a
+                href="https://www.linkedin.com/in/mariiatokinova/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+
+            <Button asChild variant="ghost" size="icon" className="h-10 w-10">
+              <a
+                href="https://www.instagram.com/cheetah.marketing/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                title="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
         </div>
       </header>
 
