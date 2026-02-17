@@ -50,7 +50,7 @@ const Index = () => {
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
   
   // === STATE for Early Bird Counter ===
-  const TOTAL_EARLY_BIRD_SPOTS = 39;
+  const TOTAL_EARLY_BIRD_SPOTS = 38;
   const [spotsReserved, setSpotsReserved] = useState<number>(0);
   const spotsRemaining = TOTAL_EARLY_BIRD_SPOTS - spotsReserved;
   
@@ -143,7 +143,7 @@ const Index = () => {
           <div className="mb-8 space-y-2">
             <p className="text-lg font-semibold text-foreground">🎯 1 hour. 4 short lessons. Forever access. Practical as hell.</p>
             <p className="text-lg font-semibold text-secondary">
-              💸 Early-bird: €39 (regular €49) — first 39 seats only.
+              💸 Early-bird: €39 (regular €49) — first 38 seats only.
             </p>
           </div>
           <div className="mb-4">
@@ -270,7 +270,7 @@ const Index = () => {
           </h2>
           <Card className="p-10 border-4 border-primary">
             <p className="text-2xl mb-4 text-card-foreground">
-              The first 39 people get full lifetime access for just <span className="font-bold text-primary text-3xl">€39</span>.
+              The first 38 people get full lifetime access for just <span className="font-bold text-primary text-3xl">€39</span>.
             </p>
             <p className="text-xl mb-6 text-muted-foreground">After that, it's €49. Still fair, but why wait?</p>
             <p className="text-lg mb-8 text-card-foreground font-semibold">
@@ -599,7 +599,7 @@ const Index = () => {
           <h2 className="text-4xl font-bold mb-6 text-white">The next client might already be watching your profile.</h2>
           <p className="text-2xl mb-8 text-white/90">This course helps you turn it into a lead, not a lost opportunity.</p>
           <Card className="p-10 mb-8">
-            <p className="text-2xl font-bold text-foreground mb-4">🎯 €39 for the first 39 seats. Then €49. Forever access.</p>
+            <p className="text-2xl font-bold text-foreground mb-4">🎯 €39 for the first 38 seats. Then €49. Forever access.</p>
             <p className="text-xl font-bold text-primary mb-6">
               {spotsRemaining > 0 
                 ? `⚡ ${spotsRemaining} spots left at special price!` 
