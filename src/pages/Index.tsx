@@ -58,7 +58,7 @@ const Index = () => {
     if (spotsRemaining > 0) {
       setSpotsReserved(prev => prev + 1);
     }
-    window.open('https://www.naffy.io/mariia-tokinova/linkedin-mini-course-cheetah', '_blank');
+    window.open('https://www.cheetahmktg.com/course', '_blank');
   };
 
   useEffect(() => {
